@@ -26,7 +26,7 @@ cd ${OPPT_DIR}
 chmod +x install_dependencies.sh && ./install_dependencies.sh --use-ros
 
 # Source ros-kinetic before installing oppt
-source /opt/ros/kinetic/setup.sh
+source /opt/ros/melodic/setup.sh
 
 ## Build and install OPPT
 cd ${OPPT_DIR}/src/
