@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt-get update
+
 # Get the name of the directory where the repository is located
 SKD_ROOT_DIR=$(cd `dirname $0` && pwd)
 

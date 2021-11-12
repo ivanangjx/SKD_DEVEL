@@ -7,7 +7,8 @@ SKD_ROOT_DIR=$(cd `dirname $0` && pwd)
 # Install mlpack dependencies
 cd ${SKD_ROOT_DIR}
 tar -xvzpf mlpack-3.4.2.tar.gz
-mkdir mlpack-3.4.2/build && cd mlpack-3.4.2/build
+mkdir -p mlpack-3.4.2/build
+cd mlpack-3.4.2/build
 cmake -D USE_OPENMP=OFF ../
 make -j$(nproc) && sudo make install
 
